@@ -1,16 +1,9 @@
 <?php
-// bienvenido.php
-
-// Siempre inicia la sesión para acceder a las variables de usuario
 session_start();
-
-// Verifica si el usuario NO está logueado
 if (!isset($_SESSION['user_id'])) {
     header("Location: index.php");
     exit;
 }
-
-// Si está logueado, obtenemos su nombre para personalizar el saludo
 $nombre_usuario = $_SESSION['user_name'];
 ?>
 
