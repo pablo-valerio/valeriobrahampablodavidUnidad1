@@ -1,9 +1,3 @@
-/* ========================================================= */
-/* ESTILOS PARA LA PÁGINA DE BIENVENIDA (bienvenido.php) */
-/* ========================================================= */
-
-/* AJUSTE CLAVE 1: Asegura que el texto y los elementos inline estén centrados */
-/* (Asumiendo que esta regla existe en la parte superior de style.css) */
 .container {
     text-align: center; 
 }
@@ -22,41 +16,28 @@
     padding-bottom: 15px;
 }
 
-/* ❌ ELIMINAR esta regla, está duplicada y confusa */
-/* .card{ text-align: center; } */ 
-
 .card {
     background-color: #f8f9fa;
     border: 1px solid #e2e6ea;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    
-    /* 🔑 CLAVE 2: Centra el BLOQUE de la tarjeta horizontalmente */
-    /* Define un ancho fijo para la tarjeta para que el margen 'auto' funcione */
-    width: 300px; /* Puedes ajustar este ancho si es necesario */
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
-    
-    /* 🔑 CLAVE 3: Centra el texto dentro de la tarjeta */
-    /* QUITAMOS EL 'text-align: left;' Y FORZAMOS EL CENTRADO HEREDADO */
     text-align: center; 
 }
 
 .card h3 {
     color: #343a40;
     margin-top: 0;
-    text-align: center; /* Asegura que el título H3 se centre */
+    text-align: center;
 }
 
-/* OPCIONAL: Centra el texto de los párrafos que contienen la información */
 .card p {
     text-align: center;
-    margin: 5px 0; /* Espaciado entre la información */
+    margin: 5px 0; 
 }
-
-
-/* Botón de Cerrar Sesión (Estilo de acción de peligro/salida) */
 .logout-btn {
     display: block; 
     width: fit-content;
