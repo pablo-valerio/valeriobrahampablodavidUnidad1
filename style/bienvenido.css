@@ -1,0 +1,105 @@
+/* === ESTILOS PARA LA PÁGINA DE BIENVENIDA === */
+/* ESTILOS GLOBALES Y CENTRADO */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    /* 🔑 CORRECCIÓN CLAVE 1: Aumentamos el ancho para que la tarjeta no se vea apretada */
+    width: 500px; /* Aumentar el ancho (ej: de 350px a 500px) */
+    
+    /* 🔑 CORRECCIÓN CLAVE 2: Centra el BLOQUE del contenedor en la pantalla */
+    margin: 0 auto; /* Centrado horizontal automático en el body */
+    
+    /* Centra el texto de los títulos dentro del contenedor */
+    text-align: center; 
+    
+    box-sizing: border-box;
+}   
+/* Título de Bienvenida (Más grande y con énfasis) */
+.container h1 {
+    color: #003366; 
+    font-size: 3em;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    /* Los títulos ya están centrados por defecto en el .container */
+}
+
+/* Subtítulo y Separador */
+.container .saludo-secundario {
+    color: #343a40;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 20px;
+}
+
+.card {
+    /* Centra el BLOQUE de la tarjeta horizontalmente */
+    width: 350px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; 
+    
+    background-color: #f8faff;
+    border: 1px solid #cce5ff;
+    border-radius: 10px;
+    padding: 25px;
+    
+    /* Efecto llamativo de ELEVACIÓN */
+    box-shadow: 0 8px 16px rgba(0, 86, 179, 0.15);
+    
+    /* 🔑 CORRECCIÓN CLAVE: Centra todo el texto dentro de la tarjeta */
+    text-align: center; 
+}
+
+/* Título de la tarjeta */
+.card h3 {
+    color: #0056b3; 
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center; /* Asegura que el título H3 esté centrado */
+    border-bottom: 1px dashed #cce5ff;
+    padding-bottom: 10px;
+}
+
+/* Estilo para los detalles importantes (Estado, ID) */
+.card p {
+    font-size: 1em;
+    color: #343a40;
+    line-height: 1.6;
+    margin: 8px 0;
+    /* 🔑 CORRECCIÓN CLAVE: Centra el texto del párrafo */
+    text-align: center; 
+}
+
+/* Destacar las etiquetas (Estado, ID) con un color */
+.card strong {
+    color: #0056b3; 
+    /* ELIMINAMOS la propiedad 'min-width: 90px;' que forzaba una alineación desigual */
+    display: inline-block; 
+}
+
+.logout-btn {
+    display: block; 
+    width: fit-content;
+    margin: 35px auto 0 auto;
+    
+    /* Color de acción (rojo) */
+    background-color: #dc3545; 
+    color: white;
+    padding: 12px 30px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}

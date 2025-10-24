@@ -1,0 +1,78 @@
+/* ========================================================= */
+/* ESTILOS PARA LA PÁGINA DE BIENVENIDA (bienvenido.php) */
+/* ========================================================= */
+
+/* AJUSTE CLAVE 1: Asegura que el texto y los elementos inline estén centrados */
+/* (Asumiendo que esta regla existe en la parte superior de style.css) */
+.container {
+    text-align: center; 
+}
+
+.container h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.container .saludo-secundario {
+    color: #495057;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 15px;
+}
+
+/* ❌ ELIMINAR esta regla, está duplicada y confusa */
+/* .card{ text-align: center; } */ 
+
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e6ea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    /* 🔑 CLAVE 2: Centra el BLOQUE de la tarjeta horizontalmente */
+    /* Define un ancho fijo para la tarjeta para que el margen 'auto' funcione */
+    width: 300px; /* Puedes ajustar este ancho si es necesario */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* 🔑 CLAVE 3: Centra el texto dentro de la tarjeta */
+    /* QUITAMOS EL 'text-align: left;' Y FORZAMOS EL CENTRADO HEREDADO */
+    text-align: center; 
+}
+
+.card h3 {
+    color: #343a40;
+    margin-top: 0;
+    text-align: center; /* Asegura que el título H3 se centre */
+}
+
+/* OPCIONAL: Centra el texto de los párrafos que contienen la información */
+.card p {
+    text-align: center;
+    margin: 5px 0; /* Espaciado entre la información */
+}
+
+
+/* Botón de Cerrar Sesión (Estilo de acción de peligro/salida) */
+.logout-btn {
+    display: block; 
+    width: fit-content;
+    margin: 25px auto 0 auto; 
+    
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+    text-decoration: none;
+}

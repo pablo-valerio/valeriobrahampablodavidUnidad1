@@ -1,0 +1,131 @@
+/* ========================================================= */
+/* ESTILOS GLOBALES Y FORMALES (APLICABLES A TODO) */
+/* ========================================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9; /* Fondo muy claro y frío */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px; /* Bordes sutiles */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para formalidad */
+    width: 350px;
+    box-sizing: border-box;
+    text-align: center; /* Centra elementos como el h2 y el párrafo inferior */
+}
+
+h2 {
+    color: #003366; /* Azul oscuro corporativo */
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-weight: 600;
+    border-bottom: 2px solid #0056b3; /* Línea separadora formal */
+    padding-bottom: 10px;
+}
+/* ========================================================= */
+/* ESTILOS DE FORMULARIO E INPUTS (CLAVE PARA LA ESTRUCTURA) */
+/* ========================================================= */
+form {
+    text-align: left; /* Alinea etiquetas y campos a la izquierda dentro del contenedor */
+}
+
+label {
+    display: block; /* MUY IMPORTANTE: Hace que cada campo ocupe su propia línea */
+    margin: 15px 0 5px;
+    color: #343a40; /* Texto oscuro */
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* El campo ocupa el ancho completo para verse como un bloque */
+    padding: 10px 12px;
+    border: 1px solid #ced4da; /* Borde gris estándar */
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Borde azul al enfocar */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); 
+    outline: none;
+}
+/* ========================================================= */
+/* BOTÓN DE ACCIÓN (REGISTRAR/ENTRAR) Y ENLACES */
+/* ========================================================= */
+button {
+    background-color: #0056b3; /* Azul primario formal */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004080; /* Azul más oscuro al pasar el mouse */
+}
+
+p {
+    text-align: center;
+    margin-top: 25px;
+    color: #6c757d;
+}
+
+a {
+    color: #007bff; /* Enlace azul claro */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/* ========================================================= */
+/* ESTILOS DE MENSAJES */
+/* ========================================================= */
+.error-message {
+    color: #dc3545; /* Rojo de error */
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+/* Título de Sesión Finalizada (Para logout.php) */
+.logout-title {
+    color: #dc3545; 
+    border-bottom: none; 
+    margin-bottom: 20px;
+}
+/* Enlace de acción rápida (Para logout.php) */
+.logout-link {
+    font-weight: 600;
+    color: #007bff; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.logout-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

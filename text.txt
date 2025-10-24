@@ -1,0 +1,3 @@
+http://localhost/SABERH/registro.php
+
+http://localhost/SABERH/index.php
